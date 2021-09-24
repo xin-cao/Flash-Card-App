@@ -88,7 +88,7 @@ public class MathActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_math);
         Log.e(MyFlag, "onCreate was just called");
         topNum = (TextView) findViewById(R.id.topNum);
         genProblemButton = (Button) findViewById(R.id.genProblemButton);
