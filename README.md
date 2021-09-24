@@ -1,6 +1,10 @@
 # Flash-Card-App
 
 
+## Login Event
+
+
+## Flash Card Event
 - generates a set of 10 questions onCreate
 - probability of multiplication vs division should be 50/50
 - on "submit" button:
