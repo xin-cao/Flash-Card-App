@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Flash Card App</string>
+    <string name="app_name">FlashCardCustomLogin</string>
+
+    <string name="GenProb">Generate 10 Questions</string>
+    <string name="Submit">Submit</string>
+    <string name="Empty"> </string>
+    <string name="Line">-----------------------</string>
+    <string name="Hint">Input your answer here</string>
+
+    <string name="Mul">×</string>
+    <string name="Div">÷</string>
+
 </resources>
