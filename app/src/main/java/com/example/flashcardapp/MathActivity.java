@@ -38,8 +38,6 @@ public class MathActivity extends AppCompatActivity {
             return "÷";
         }
     }
-
-
     // functions to get an array of feasible factors for division
 
     public static int[] checkDiv(int top) {
@@ -84,13 +82,13 @@ public class MathActivity extends AppCompatActivity {
         return output;
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math);
         Log.e(MyFlag, "onCreate was just called");
         topNum = (TextView) findViewById(R.id.topNum);
+        topNum.setText("hello");
         genProblemButton = (Button) findViewById(R.id.genProblemButton);
         genProblemButton.setOnClickListener(new View.OnClickListener() {
             int i = 0;
@@ -98,20 +96,30 @@ public class MathActivity extends AppCompatActivity {
             int tNum[] = new int[10];
             int bNum[] = new int[10];
             String op[] = new String[10];
-            String disp;
+            String operator;
+            int Op1, Op2, Answer;
 
             @Override
             public void onClick(View view) {
+                topNum.setText("hello");
                 for (; i <= tNum.length - 1; i++) {
                     tNum[i] = randomNumber(10, 144);
                     tempArr = checkDiv(tNum[i]);
                     bNum[i] = bottomRand(shortenArr(tempArr));
                     op[i] = fittyfitty();
                 }
-                topNum.setText(tNum[0]);
+                Op1 = tNum[0];
+
             }
 
         });
+/*
+        submitButton = (Button) findViewById(R.id.submitButton);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+
+        });
+        }
+        */
 
     }
 
